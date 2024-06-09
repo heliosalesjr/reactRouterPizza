@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div>Hello diva!</div>
+    <div><h1 className='text-3xl text-center font-semibold text-slate-400'>Hello diva!</h1></div>
   )
 }
 
