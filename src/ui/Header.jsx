@@ -1,15 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import SearchOrder from '../features/order/SearchOrder';
+import Username from '../features/user/Username';
 
 function Header() {
   return (
-    <header>
-        <Link>
-            Helio's Pizzas
-        </Link>
-        <p>Helio</p>
+    <header className="flex items-center justify-between border-b border-stone-200 bg-violet-400 px-4 py-3 uppercase sm:px-6">
+      <Link to="/" className="tracking-widest">
+        Hélio Sal Pizza Co.
+      </Link>
+
+      <SearchOrder />
+      <Username />
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
